@@ -218,8 +218,8 @@ class DirectoryActivity : AppCompatActivity(),View.OnClickListener,View.OnLongCl
                     try {
                         val db = dbHelper.writableDatabase
                         db.execSQL("""
-                            DELETE FROM items
-                            WHERE name = "${year}"
+                            DELETE FROM bikes
+                            WHERE year = "${year}"
                         """)
                         populateRecyclerView()
                     } catch (ex: Exception) {

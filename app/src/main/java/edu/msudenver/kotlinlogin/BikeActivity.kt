@@ -71,6 +71,7 @@ class BikeActivity: AppCompatActivity(), View.OnClickListener {
             null,
             "year = \"${year}\"",
             null,
+
             null,
             null,
             null
@@ -119,10 +120,11 @@ class BikeActivity: AppCompatActivity(), View.OnClickListener {
                 db.execSQL(
                     """
                         UPDATE bikes SET
-                            make = ${make}, 
+                            make = "${make}", 
                             model = "${model}" 
                             size = "${size}"
-                        WHERE year = "${year}"
+                            WHERE year = "${year}"
+                        
                     """
                 )
                 Toast.makeText(
