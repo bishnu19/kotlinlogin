@@ -31,6 +31,7 @@ class DirectoryActivity : AppCompatActivity(),View.OnClickListener,View.OnLongCl
     lateinit var dbHelper: BikeDatabaseHelper
 
     // creates the ItemHolder inner class
+    // Push test
     private inner class ItemHolder(view: View): RecyclerView.ViewHolder(view) {
         val bikeYear: TextView     = view.findViewById(R.id.bikeYear)
         val bikeMake: TextView = view.findViewById(R.id.bikeMake)
