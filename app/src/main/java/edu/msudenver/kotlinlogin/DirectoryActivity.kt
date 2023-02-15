@@ -104,7 +104,7 @@ class DirectoryActivity : AppCompatActivity(),View.OnClickListener,View.OnLongCl
         recyclerView.layoutManager = LinearLayoutManager(this)
         populateRecyclerView()
         // initializes the floating action button
-        val fabCreate: FloatingActionButton = findViewById(R.id.fabCreate)
+        val fabCreate: Button = findViewById(R.id.add_button)
         fabCreate.setOnClickListener {
             // calls CreateUpdateActivity for create
             val intent = Intent(this, BikeActivity::class.java)

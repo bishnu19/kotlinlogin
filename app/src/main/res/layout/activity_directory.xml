@@ -13,18 +13,30 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:id="@+id/recyclerView"/>
-
-    <!--<com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fabCreate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end|bottom"
-        android:src="@drawable/baseline_add_24"
-        android:layout_margin="16dp" />-->
-
     <LinearLayout
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="650dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/add_button"
+            android:layout_marginRight="10dp"
+            android:text="Add"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My Rides"
+            android:id="@+id/ride_button"/>
+    </LinearLayout>
+
+
+<!--    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
         <com.google.android.material.floatingactionbutton.FloatingActionButton
             android:id="@+id/fabCreate"
             android:layout_width="wrap_content"
@@ -32,22 +44,14 @@
             android:layout_gravity="end|bottom"
             android:src="@drawable/baseline_add_24"
             android:layout_margin="16dp" />
-       <!-- <Button
+        <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:id="@+id/addBike"
-            android:text="add"
-            android:layout_marginTop="600dp"/>-->
-    </LinearLayout>
+            android:text="MyRide"
+            android:layout_gravity="bottom"/>
 
+    </LinearLayout>-->
 
-   <!-- <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/fabCreate"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="end|bottom"
-        android:src="@drawable/baseline_add_24"
-        android:layout_margin="16dp" />-->
     <!-- this the navigation view which draws and shows the navigation drawer -->
     <!-- include the menu created in the menu folder -->
     <com.google.android.material.navigation.NavigationView
