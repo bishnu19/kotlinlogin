@@ -29,8 +29,6 @@ class BikeActivity: AppCompatActivity(), View.OnClickListener {
         // gets references to the view objects
         edtYear = findViewById(R.id.edtYear)
         edtModel = findViewById(R.id.edtModel)
-//        val spnCategory: Spinner = findViewById(R.id.spnCategory)
-
         edtMake = findViewById(R.id.edtMake)
         edtSize = findViewById(R.id.edtSize)
 
@@ -47,6 +45,7 @@ class BikeActivity: AppCompatActivity(), View.OnClickListener {
 
         // gets the operation and updates the view accordingly
         op = intent.getIntExtra("op", CREATE_OP)
+        //op = intent.getStringExtra("op", CREATE_OP)
         if (op == CREATE_OP)
             btnCreateUpdate.text = "CREATE"
         // TODO #5: write the code for the "update" operation
@@ -114,14 +113,14 @@ class BikeActivity: AppCompatActivity(), View.OnClickListener {
                 ).show()
             }
         }
-        // TODO #6: write the code for the "update" operation
+        //  the code for the "update" operation
         else {
             try {
                 db.execSQL(
                     """
                         UPDATE bikes SET
                             make = "${make}", 
-                            model = "${model}" 
+                            model = "${model}", 
                             size = "${size}"
                             WHERE year = "${year}"
                         

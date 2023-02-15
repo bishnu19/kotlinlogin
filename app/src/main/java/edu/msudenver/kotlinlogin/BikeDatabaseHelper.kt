@@ -10,7 +10,7 @@ class BikeDatabaseHelper(context: Context): SQLiteOpenHelper(context, DATABASE_N
 
     companion object {
         const val DATABASE_NAME = "Bike.db"
-        const val DATABASE_VERSION = 2
+        const val DATABASE_VERSION = 3
     }
 
     override fun onCreate(p0: SQLiteDatabase?) {
