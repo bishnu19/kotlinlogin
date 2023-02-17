@@ -48,7 +48,7 @@ class BikeActivity: AppCompatActivity(), View.OnClickListener {
         //op = intent.getStringExtra("op", CREATE_OP)
         if (op == CREATE_OP)
             btnCreateUpdate.text = "CREATE"
-        // TODO #5: write the code for the "update" operation
+        // write the code for the "update" operation
         else {
             btnCreateUpdate.text = "UPDATE"
             val year = intent.getStringExtra("year") ?: ""
